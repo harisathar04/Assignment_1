@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>21i-1159 Haris Athar | Job Listings</title>
+<script>
+
+</script>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+  <nav>
+    <img src = "images/bg-header-desktop.svg" alt = "header-image">
+  </nav>
+  <main>
+  <div id = "overlay" class="overlay"></div>
+  <div id="add-job-popup" class="popup">
+    <div class="popup-content">
+      <h2>Add a New Job</h2>
+        <form id="job-form">
+          <label for="company-name">Company Name:</label>
+          <input type="text" id="company-name" name="company-name" required>
+  
+          <label for="position">Position:</label>
+          <input type="text" id="position" name="position" required>
+  
+          <!-- Add input fields for other job details -->
+          <label for="role">Role:</label>
+          <input type="text" id="role" name="role" required>
+  
+          <label for="level">Level:</label>
+          <input type="text" id="level" name="level" required>
+  
+          <label for="posted-at">Posted At:</label>
+          <input type="text" id="posted-at" name="posted-at" required>
+  
+          <label for="contract">Contract:</label>
+          <input type="checkbox" id="contract" name="Full Time" required>&nbsp;&nbsp;Full Time&nbsp;&nbsp;
+          <input type="checkbox" id="contract" name="Part Time" required>&nbsp;&nbsp;Part Time&nbsp;&nbsp;
+  
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+  
+          <!-- Add input fields for languages and tools using JavaScript -->
+          <div id="tools-container"></div>
+  
+          <button type="submit" class="submit-button">Add Job</button>
+        </form>
+        <button id="close-popup" class="close-button">X</button>
+      </div>
+      <div class="job-popup">
+        <div class="job-popup-content">
+        </div>
+    </div>    
+  </div>
+  <div id="job-listings"></div>
+    <div class = "add-job">
+      <img src = "images/plus.png" width = 50px height= 50px>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
